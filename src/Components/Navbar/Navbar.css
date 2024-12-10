@@ -1,0 +1,93 @@
+/* Navbar container */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+.navbar {
+  display: flex; /* Aligns items horizontally */
+  justify-content: space-between; /* Space between logo, nav links, and button */
+  align-items: center; /* Vertically aligns items */
+  margin-bottom: 20px; /* Adds spacing below the navbar */
+  background-color: transparent;
+}
+
+/* Logo */
+.logo {
+  font-size: 24px; /* Adjusts the logo's font size */
+}
+
+/* Navigation Links */
+.nav-links {
+  list-style: none; /* Removes default bullet points from list items */
+  display: flex; /* Aligns list items horizontally */
+  gap: 20px; /* Adds space between each link */
+  gap: 70px;
+}
+
+.nav-links a {
+  text-decoration: none; /* Removes underline from links */
+  color: #333; /* Sets link text color */
+  font-weight: bold; /* Makes link text bold */
+}
+
+/* Buttons */
+
+a{
+  padding: 10px 20px; /* Adds space inside the button */
+  border: none; /* Removes border */
+  border-radius: 20px; /* Makes the button edges rounded */
+  font-weight: bold; /* Makes the button text bold */
+  cursor: pointer; /* Changes the cursor to a pointer on hover */
+}
+
+/* "Hire Me" button */
+.hire-me {
+  text-decoration: none;
+  font-size: small;
+  font-weight: 700;
+  background: white; /* Sets button background color */
+  color: #333; /* Sets text color */
+  border: 2px solid #333; /* Adds a border around the button */
+  transition: all linear 0.4s;
+}
+
+.hire-me:hover {
+  background: #333; /* Changes background color on hover */
+  color: white; /* Changes text color on hover */
+}
+.menu {
+  display: none;
+}
+@media (max-width: 480px) {
+  .navbar {
+    display: none;
+  }
+  .menu {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    top: 05%;
+    left: 20%;
+    height: 50px;
+    width: 60%;
+    display: flex;
+    gap: 5px;
+    border: transparent;
+    outline: transparent;
+    text-decoration: none;
+    background: rgba(255, 255, 255, 0.3); /* Semi-transparent white */
+    backdrop-filter: blur(15px); /* Blurred effect */
+    border-radius: 20px; /* Rounded corners */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  }
+  .set {
+    margin-left: -10px;
+    height: 50%;
+    width: 50%;
+  }
+  .men {
+    margin-right: -10px;
+    height: 50%;
+    width: 50%;
+  }
+}

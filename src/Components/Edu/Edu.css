@@ -1,0 +1,100 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.edu-body {
+  background: linear-gradient(135deg, #e6e2f1, #ebc1cb);
+  color: #333;
+  height: 100vh;
+  width: 100%;
+  position: relative;
+}
+.edu-content {
+  margin-top: 7%;
+  left: 10%;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  gap: 20%;
+  width: 80%;
+  height: 60%;
+}
+.eduh1 {
+  color: saddlebrown;
+  position: absolute;
+  top: 3%;
+  left: 42.5%;
+  position: absolute;
+  font-size: 40px;
+  width: 13%;
+  text-align: center;
+  justify-content: center;
+}
+.eduimg {
+  position: absolute;
+  right: 10px;
+  height: 140px;
+  width: 180px;
+  border-radius: 10px;
+  /* margin-left: 100px ; */
+}
+.eduimg1 {
+  position: absolute;
+  height: 140px;
+  width: 180px;
+  left: 10px;
+  /* margin-right: 50%; */
+  border-radius: 10px;
+}
+.btech {
+  position: relative;
+  display: flex;
+  text-align: left;
+  /* margin-top: 30px; */
+  margin-bottom: 80px;
+  align-items: center;
+}
+.arc {
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  text-align: right;
+  margin-top: 80px;
+  margin-bottom: 80px;
+}
+.schl {
+  position: relative;
+  display: flex;
+  text-align: left;
+  margin-top: 80px;
+  align-items: center;
+}
+.homebutton {
+  display: none;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  background-color: black;
+  position: absolute;
+  padding-top: 2.5px;
+  height: 30px;
+  width: 30%;
+  border-radius: 30px;
+  left: 35%;
+  bottom: -40%;
+  transition: all 0.5s linear; /* Smooth transition for hover effect */
+}
+
+/* Hover effect */
+.homebutton:hover {
+  color: black; /* Change text color to black */
+  background-color: white; /* Change background to white */
+  box-shadow: 0 4px 6px rgba(192, 192, 192, 0.6); /* Add a silver shadow */
+}

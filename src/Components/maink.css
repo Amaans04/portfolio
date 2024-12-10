@@ -1,0 +1,248 @@
+/* *{
+    height: 100vh;
+    width: 100%;
+    overflow-y: hidden;
+    /* position: relative;
+    background-color: #fd7283;
+    background-image: linear-gradient(225deg, #fd7283 10%, #c0e7fd 90%);} */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.mainbody {
+  font-family: "Arial", sans-serif;
+  background: linear-gradient(135deg, #e6e2f1, #ebc1cb);
+  color: #333;
+  height: 100vh;
+  width: 100%;
+  position: relative;
+}
+.blurred-container {
+  background: rgba(255, 255, 255, 0.3); /* Semi-transparent white */
+  backdrop-filter: blur(15px); /* Blurred effect */
+  border-radius: 20px; /* Rounded corners */
+  padding: 20px; /* Inner spacing */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  position: absolute;
+  width: 95%;
+  height: 95%;
+  left: 2.5%;
+  top: 2.5%;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+  align-items: center;
+  padding: 20px 50px;
+  border-radius: 10px;
+  margin: 20px;
+}
+
+.logo {
+  font-size: 24px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+.see-work {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.see-work {
+  background: white;
+  text-decoration: none;
+  font-weight:500;
+  font-size: small;
+  color: #333;
+  transition: all 0.5s linear; /* Smooth transition for hover effect */
+}
+
+.see-work:hover {
+  color: black; /* Change text color to black */
+  background-color: white; /* Change background to white */
+  box-shadow: 0 4px 6px rgba(192, 192, 192, 0.6); /* Add a silver shadow */
+}
+
+/* Hero Section */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 50px;
+  margin: 20px;
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  height: 70vh;
+}
+
+.hero-text {
+  max-width: 50%;
+}
+
+.hero-text h1 {
+  font-size: 2.5rem;
+  margin: 20px 0;
+}
+.hero-text h2 {
+  margin-top: 25px;
+}
+.hero-text .description {
+  font-size: 1rem;
+  margin-bottom: 20px;
+  color: #666;
+}
+.description {
+  margin-top: 25px;
+}
+
+.see-work {
+  /* margin-top: 25px; */
+  background: black;
+  color: white;
+  transition: all 0.5s linear; 
+}
+
+.see-work:hover {
+  color: black; /* Change text color to black */
+  background-color: white; /* Change background to white */
+  box-shadow: 0 4px 6px rgba(192, 192, 192, 0.6); /* Add a silver shadow */
+}
+
+.hero-image img {
+  max-width: 100%;
+  height: auto;
+}
+.heroimg {
+  height: 30%;
+  width: 32%;
+  position: absolute;
+  right: 7%;
+  top: 23%;
+}
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+
+  .hero-text {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .hero-text h1 {
+    font-size: 2rem;
+  }
+
+  .hero-text h2 {
+    font-size: 1.5rem;
+  }
+
+  .hero-text .description {
+    font-size: 0.9rem;
+  }
+
+  .heroimg {
+    max-height: 200px;
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .navbar {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .mainbody {
+    height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+    position: relative;
+  }
+  .hero {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
+    margin: 20px;
+    bottom: 2%;
+    right: 0.3%;
+    background:rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(15px);
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    height: 78vh;
+  }
+
+  .hero-text {
+    text-align: left;
+  }
+  .hero-text h1 {
+    
+    font-size: 1.5rem;
+  }
+
+  .hero-text h2 {
+    font-size: 1.2rem;
+  }
+
+  .hero-text .description {
+    font-size: 0.8rem;
+  }
+
+  .btn {
+    padding: 8px 15px;
+  }
+
+  .hero {
+    padding: 10px;
+    margin: 10px;
+  }
+
+  .heroimg {
+    max-height: 150px;
+    position: absolute;
+    height: 105%;
+    width: 50%;
+    right: 25%;
+    top: 50%;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+
+  }
+  .see-work {
+    position: absolute;
+    top: 85%;
+    left: 33%;
+  }
+}

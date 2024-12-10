@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.work-body {
+  position: relative;
+  background: linear-gradient(135deg, #e6e2f1, #ebc1cb);
+  color: #333;
+  height: 400vh;
+  width: 100%;
+  position: relative;
+}
+.wrkhdn {
+  color: saddlebrown;
+  position: absolute;
+  left: 39.5%;
+  top: 2%;
+  width: 21%;
+}
+.wrk {
+  position: absolute;
+  top: 5%;
+  left: 3%;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+.wrk h2 {
+  margin-left:-30px;
+  margin-bottom: 10px;
+  color: saddlebrown;
+}

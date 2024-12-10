@@ -1,0 +1,55 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.about-body{
+  background: linear-gradient(135deg, #e6e2f1, #ebc1cb);
+  color: #333;
+  height: 100vh;
+  width: 100%;
+  position: relative;
+}
+.about-content{
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    text-align: center;
+    width: 20%;
+    height: 20%;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.about-content h1{
+    text-align: center;
+    justify-content: center;
+
+}
+.homebutton {
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  background-color: black;
+  position: absolute;
+  padding-top: 2.5px;
+  height: 30px;
+  width: 30%;
+  border-radius: 30px;
+  left: 35%;
+  bottom: -40%;
+  transition: all 0.5s linear; /* Smooth transition for hover effect */
+}
+
+/* Hover effect */
+.homebutton:hover {
+  color: black; /* Change text color to black */
+  background-color: white; /* Change background to white */
+  box-shadow: 0 4px 6px rgba(192, 192, 192, 0.6); /* Add a silver shadow */
+}
